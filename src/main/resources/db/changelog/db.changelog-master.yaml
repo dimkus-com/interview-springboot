@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-tables
+      author: Dmitriy Gerasimov
+      changes:
+        - sqlFile:
+            dbms: h2
+            encoding: utf8
+            path: scripts/01-tables.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true

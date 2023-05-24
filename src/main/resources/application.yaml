@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:interview
+#    url: jdbc:h2:file:./interview.db
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+    cz.gerasimov.interviewproject: TRACE
